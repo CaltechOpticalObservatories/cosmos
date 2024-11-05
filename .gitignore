@@ -200,3 +200,5 @@ build/
 # Miscellaneous
 *.tgz
 *.lock
+
+*storybook.log

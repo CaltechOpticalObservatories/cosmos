@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import styles from './Guider.module.css';
 
-const Guider = () => {
+export const Guider = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   const moveTelescope = (direction: 'up' | 'down' | 'left' | 'right') => {
@@ -37,6 +37,3 @@ const Guider = () => {
     </div>
   );
 };
-
-export default Guider;
-

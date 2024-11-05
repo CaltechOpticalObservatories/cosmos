@@ -1,2 +1,2 @@
-export { default as Guider } from './Guider/Guider';
-export { default as Target } from './Target/Target';
+export { Guider } from './Guider/Guider';
+export { Target } from './Target/Target';

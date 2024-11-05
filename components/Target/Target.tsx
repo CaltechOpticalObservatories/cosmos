@@ -13,7 +13,7 @@ interface ParsedTarget {
   optionalFields?: { [key: string]: string }; // Optional fields
 }
 
-const Target: React.FC<TargetProps> = ({ starList }) => {
+export const Target: React.FC<TargetProps> = ({ starList }) => {
   // You can assume starList is already parsed and valid JSON
   if (!starList || starList.length === 0) {
     return <div className={styles.container}>No star targets found.</div>;
@@ -45,5 +45,3 @@ const Target: React.FC<TargetProps> = ({ starList }) => {
     </div>
   );
 };
-
-export default Target;
