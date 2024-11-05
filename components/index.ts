@@ -1,1 +1,1 @@
-export { default as Guider } from './Guider/Guider';
+export { Guider } from './Guider/Guider';
