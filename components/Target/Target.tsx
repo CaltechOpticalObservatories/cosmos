@@ -20,15 +20,15 @@ export const Target: React.FC<TargetProps> = ({ starList }) => {
   }
 
   return (
-    <div className={styles.container}>
-      <h2>Star Targets</h2>
-      <table className={styles.targetTable}>
-        <thead>
+    <div className="container mt-4">
+      <h2 className="mb-4">Star Targets</h2>
+      <table className="table table-bordered table-striped table-hover">
+        <thead className="table-dark">
           <tr>
-            <th>Target Name</th>
-            <th>RA</th>
-            <th>Dec</th>
-            <th>Equinox</th>
+            <th scope="col">Target Name</th>
+            <th scope="col">RA</th>
+            <th scope="col">Dec</th>
+            <th scope="col">Equinox</th>
           </tr>
         </thead>
         <tbody>
