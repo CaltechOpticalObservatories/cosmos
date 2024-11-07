@@ -23,15 +23,44 @@ export const Guider = () => {
   };
 
   return (
-    <div className={styles.guider}>
-      <h2>Telescope Guider</h2>
-      <div className={styles.controls}>
-        <button onClick={() => moveTelescope('up')}>Up</button>
-        <button onClick={() => moveTelescope('down')}>Down</button>
-        <button onClick={() => moveTelescope('left')}>Left</button>
-        <button onClick={() => moveTelescope('right')}>Right</button>
+    <div className="container mt-4">
+      <h2 className="mb-4">Telescope Guider</h2>
+      <div className="d-flex flex-column align-items-center mb-4">
+        {/* Control Buttons */}
+        <div className="btn-group mb-3">
+          <button
+            className="btn btn-primary"
+            onClick={() => moveTelescope('up')}
+          >
+            Up
+          </button>
+        </div>
+        <div className="btn-group mb-3">
+          <button
+            className="btn btn-primary"
+            onClick={() => moveTelescope('left')}
+          >
+            Left
+          </button>
+          <button
+            className="btn btn-primary"
+            onClick={() => moveTelescope('right')}
+          >
+            Right
+          </button>
+        </div>
+        <div className="btn-group">
+          <button
+            className="btn btn-primary"
+            onClick={() => moveTelescope('down')}
+          >
+            Down
+          </button>
+        </div>
       </div>
-      <div className={styles.position}>
+
+      {/* Position Info */}
+      <div className="alert alert-info">
         <p>Current Position: X: {position.x}, Y: {position.y}</p>
       </div>
     </div>
